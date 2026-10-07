@@ -66,7 +66,7 @@ Moduler & Package/
 
 └── modules/
 
-    ├── \\\_\\\_init\\\_\\\_.py
+    ├── __init__.py
 
     ├── operations.py
 
@@ -80,7 +80,7 @@ Moduler & Package/
 
 Contains the main menu and connects all operations from the custom modules.
 
-********### `modules/\\_\\_init\\_\\_.py`******
+********### `modules/__init__.py`******
 
 Used to initialize the custom `modules` package.
 
@@ -234,7 +234,7 @@ Uses Python's built-in `dir()` function to display available attributes of suppo
 
 - Custom package using `modules/`
 
-- `\\_\\_init\\_\\_.py`
+- `__init__.py`
 
 ********### File Handling******
 
