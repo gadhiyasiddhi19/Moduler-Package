@@ -1,21 +1,13 @@
 # Moduler & Package – Multi-Utility Toolkit
-
-************Author: Siddhi Gadhiya**********
-
-********## 📌 Project Overview******
-
-Moduler & Package is a Python-based ************Multi-Utility Toolkit********** that provides different useful operations through a menu-driven program.
+**Author: Siddhi Gadhiya****## 📌 Project Overview**
+Moduler & Package is a Python-based ****************Multi-Utility Toolkit************** that provides different useful operations through a menu-driven program.
 
 The project is organized using a custom Python package named `modules`. Different operations are separated into individual Python files to make the project structured, reusable, and easy to understand.
-
-********## 🛠️ Technology Used******
-
+## 🛠️ Technology Used
 - Python 3.14.6
 
 - VS Code
-
-********## 🎯 Objective******
-
+## 🎯 Objective
 The main objective of this project is to implement and demonstrate:
 
 - Python Modules and Packages
@@ -47,9 +39,7 @@ The main objective of this project is to implement and demonstrate:
 - Loops
 
 - File Handling
-
-********## 📂 Project Structure******
-
+## 📂 Project Structure
 ```text
 
 Moduler & Package/
@@ -73,37 +63,19 @@ Moduler & Package/
     └── file_operations.py
 
 ```
-
-********## 📄 File Description******
-
-********### `main.py`******
-
+## 📄 File Description****### `main.py`
 Contains the main menu and connects all operations from the custom modules.
-
-********### `modules/__init__.py`******
-
+### `modules/__init__.py`
 Used to initialize the custom `modules` package.
-
-********### `modules/operations.py`******
-
+### `modules/operations.py`
 Contains datetime/time, mathematical, random data, UUID, and module attribute operations.
-
-********### `modules/file_operations.py`******
-
+### `modules/file_operations.py`
 Contains file creation, writing, reading, and appending operations.
-
-********### `README.md`******
-
+### `README.md`
 Contains the complete project documentation.
-
-********### `output.png`******
-
+### `output.png`
 Contains the screenshot/image of the project output.
-
-********## ✨ Features******
-
-********### 1. Datetime and Time Operations******
-
+## ✨ Features****### 1. Datetime and Time Operations
 - Display current date and time
 
 - Calculate difference between two dates/times
@@ -115,9 +87,7 @@ Contains the screenshot/image of the project output.
 - Countdown Timer
 
 Uses Python's `datetime` and `time` modules.
-
-********### 2. Mathematical Operations******
-
+### 2. Mathematical Operations
 - Factorial calculation
 
 - Compound interest calculation
@@ -129,9 +99,7 @@ Uses Python's `datetime` and `time` modules.
 Shapes include Circle, Rectangle, and Triangle.
 
 Uses Python's `math` module.
-
-********### 3. Random Data Generation******
-
+### 3. Random Data Generation
 - Random number
 
 - Random list
@@ -141,13 +109,9 @@ Uses Python's `math` module.
 - Random OTP
 
 Uses Python's `random` module.
-
-********### 4. Unique Identifier Generation******
-
+### 4. Unique Identifier Generation
 Generates a unique identifier using Python's `uuid` module.
-
-********### 5. File Operations******
-
+### 5. File Operations
 - Create a new file
 
 - Write data to a file
@@ -163,9 +127,7 @@ File modes used:
 - `w` – Write
 
 - `a` – Append
-
-********### 6. Explore Module Attributes******
-
+### 6. Explore Module Attributes
 Uses Python's built-in `dir()` function to display available attributes of supported modules:
 
 - `datetime`
@@ -177,11 +139,7 @@ Uses Python's built-in `dir()` function to display available attributes of suppo
 - `random`
 
 - `uuid`
-
-********## 📚 Concepts Used******
-
-********### Python Basics******
-
+## 📚 Concepts Used****### Python Basics
 - Variables
 
 - Data Types
@@ -197,35 +155,23 @@ Uses Python's built-in `dir()` function to display available attributes of suppo
 - Lists
 
 - Dictionary
-
-********### Conditional Statements******
-
+### Conditional Statements
 - `if`
 
 - `elif`
 
 - `else`
-
-********### Loops******
-
+### Loops
 - `while`
 
 - `for`
 
 - `break`
-
-********### Functions******
-
+### Functions
 - User-defined functions
 
 - Function calling
-
-
-
-
-
-********### Modules and Packages******
-
+### Modules and Packages
 - `import`
 
 - Built-in modules
@@ -235,9 +181,7 @@ Uses Python's built-in `dir()` function to display available attributes of suppo
 - Custom package using `modules/`
 
 - `__init__.py`
-
-********### File Handling******
-
+### File Handling
 - `open()`
 
 - `read()`
@@ -247,9 +191,7 @@ Uses Python's built-in `dir()` function to display available attributes of suppo
 - `close()`
 
 - File modes `r`, `w`, `a`
-
-********### Other Python Concepts******
-
+### Other Python Concepts
 - `datetime.now()`
 
 - `strftime()`
@@ -281,9 +223,7 @@ Uses Python's built-in `dir()` function to display available attributes of suppo
 - String operations
 
 - Type conversion
-
-********## ▶️ How to Run******
-
+## ▶️ How to Run
 1. Open the `Moduler & Package` folder in VS Code.
 
 2. Open the terminal.
@@ -299,9 +239,7 @@ python main.py
 4. The program will display the main menu.
 
 5. Select an option by entering the corresponding number.
-
-********## 🖥️ Sample Output******
-
+## 🖥️ Sample Output
 ```text
 
 Welcome to Multi-Utility Toolkit 
@@ -648,7 +586,7 @@ Enter module name to explore: math
 
 Available Attributes in math module: 
 
-['\\\_\\\_doc\\\_\\\_', '\\\_\\\_loader\\\_\\\_', '\\\_\\\_name\\\_\\\_', '\\\_\\\_package\\\_\\\_', '\\\_\\\_spec\\\_\\\_', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'cbrt', 'ceil', 'comb', 'copysign', 'cos', 'cosh', 'degrees', 'dist', 'e', 'erf', 'erfc', 'exp', 'exp2', 'expm1', 'fabs', 'factorial', 'floor', 'fma', 'fmod', 'frexp', 'fsum', 'gamma', 'gcd', 'hypot', 'inf', 'isclose', 'isfinite', 'isinf', 'isnan', 'isqrt', 'lcm', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'log2', 'modf', 'nan', 'nextafter', 'perm', 'pi', 'pow', 'prod', 'radians', 'remainder', 'sin', 'sinh', 'sqrt', 'sumprod', 'tan', 'tanh', 'tau', 'trunc', 'ulp'] 
+['__doc__', '__loader__', '__name__', '__package__', '__spec__', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'cbrt', 'ceil', 'comb', 'copysign', 'cos', 'cosh', 'degrees', 'dist', 'e', 'erf', 'erfc', 'exp', 'exp2', 'expm1', 'fabs', 'factorial', 'floor', 'fma', 'fmod', 'frexp', 'fsum', 'gamma', 'gcd', 'hypot', 'inf', 'isclose', 'isfinite', 'isinf', 'isnan', 'isqrt', 'lcm', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'log2', 'modf', 'nan', 'nextafter', 'perm', 'pi', 'pow', 'prod', 'radians', 'remainder', 'sin', 'sinh', 'sqrt', 'sumprod', 'tan', 'tanh', 'tau', 'trunc', 'ulp'] 
 
 Welcome to Multi-Utility Toolkit 
 
