@@ -1,20 +1,20 @@
-**# Moduler & Package – Multi-Utility Toolkit**
+# Moduler & Package – Multi-Utility Toolkit
 
-****Author: Siddhi Gadhiya****
+************Author: Siddhi Gadhiya**********
 
-**## 📌 Project Overview**
+********## 📌 Project Overview******
 
-Moduler & Package is a Python-based ****Multi-Utility Toolkit**** that provides different useful operations through a menu-driven program.
+Moduler & Package is a Python-based ************Multi-Utility Toolkit********** that provides different useful operations through a menu-driven program.
 
 The project is organized using a custom Python package named `modules`. Different operations are separated into individual Python files to make the project structured, reusable, and easy to understand.
 
-**## 🛠️ Technology Used**
+********## 🛠️ Technology Used******
 
 - Python 3.14.6
 
 - VS Code
 
-**## 🎯 Objective**
+********## 🎯 Objective******
 
 The main objective of this project is to implement and demonstrate:
 
@@ -48,53 +48,61 @@ The main objective of this project is to implement and demonstrate:
 
 - File Handling
 
-**## 📂 Project Structure**
+********## 📂 Project Structure******
 
 ```text
 
 Moduler & Package/
 
 │
+
 ├── main.py
+
 ├── README.md
+
 ├── output.png
+
 │
+
 └── modules/
-    ├── __init__.py
+
+    ├── \\\_\\\_init\\\_\\\_.py
+
     ├── operations.py
+
     └── file_operations.py
 
 ```
 
-**## 📄 File Description**
+********## 📄 File Description******
 
-**### `main.py`**
+********### `main.py`******
 
 Contains the main menu and connects all operations from the custom modules.
 
-**### `modules/__init__.py`**
+********### `modules/\\_\\_init\\_\\_.py`******
 
 Used to initialize the custom `modules` package.
 
-**### `modules/operations.py`**
+********### `modules/operations.py`******
 
 Contains datetime/time, mathematical, random data, UUID, and module attribute operations.
 
-**### `modules/file_operations.py`**
+********### `modules/file_operations.py`******
 
 Contains file creation, writing, reading, and appending operations.
 
-**### `README.md`**
+********### `README.md`******
 
 Contains the complete project documentation.
 
-**### `output.png`**
+********### `output.png`******
 
 Contains the screenshot/image of the project output.
 
-**## ✨ Features**
+********## ✨ Features******
 
-**### 1. Datetime and Time Operations**
+********### 1. Datetime and Time Operations******
 
 - Display current date and time
 
@@ -108,7 +116,7 @@ Contains the screenshot/image of the project output.
 
 Uses Python's `datetime` and `time` modules.
 
-**### 2. Mathematical Operations**
+********### 2. Mathematical Operations******
 
 - Factorial calculation
 
@@ -122,7 +130,7 @@ Shapes include Circle, Rectangle, and Triangle.
 
 Uses Python's `math` module.
 
-**### 3. Random Data Generation**
+********### 3. Random Data Generation******
 
 - Random number
 
@@ -134,11 +142,11 @@ Uses Python's `math` module.
 
 Uses Python's `random` module.
 
-**### 4. Unique Identifier Generation**
+********### 4. Unique Identifier Generation******
 
 Generates a unique identifier using Python's `uuid` module.
 
-**### 5. File Operations**
+********### 5. File Operations******
 
 - Create a new file
 
@@ -156,7 +164,7 @@ File modes used:
 
 - `a` – Append
 
-**### 6. Explore Module Attributes**
+********### 6. Explore Module Attributes******
 
 Uses Python's built-in `dir()` function to display available attributes of supported modules:
 
@@ -170,9 +178,9 @@ Uses Python's built-in `dir()` function to display available attributes of suppo
 
 - `uuid`
 
-**## 📚 Concepts Used**
+********## 📚 Concepts Used******
 
-**### Python Basics**
+********### Python Basics******
 
 - Variables
 
@@ -190,7 +198,7 @@ Uses Python's built-in `dir()` function to display available attributes of suppo
 
 - Dictionary
 
-**### Conditional Statements**
+********### Conditional Statements******
 
 - `if`
 
@@ -198,7 +206,7 @@ Uses Python's built-in `dir()` function to display available attributes of suppo
 
 - `else`
 
-**### Loops**
+********### Loops******
 
 - `while`
 
@@ -206,14 +214,17 @@ Uses Python's built-in `dir()` function to display available attributes of suppo
 
 - `break`
 
-**### Functions**
+********### Functions******
 
 - User-defined functions
 
 - Function calling
 
 
-**### Modules and Packages**
+
+
+
+********### Modules and Packages******
 
 - `import`
 
@@ -223,9 +234,9 @@ Uses Python's built-in `dir()` function to display available attributes of suppo
 
 - Custom package using `modules/`
 
-- `__init__.py`
+- `\\_\\_init\\_\\_.py`
 
-**### File Handling**
+********### File Handling******
 
 - `open()`
 
@@ -237,7 +248,7 @@ Uses Python's built-in `dir()` function to display available attributes of suppo
 
 - File modes `r`, `w`, `a`
 
-**### Other Python Concepts**
+********### Other Python Concepts******
 
 - `datetime.now()`
 
@@ -271,13 +282,13 @@ Uses Python's built-in `dir()` function to display available attributes of suppo
 
 - Type conversion
 
-**## ▶️ How to Run**
+********## ▶️ How to Run******
 
-1\. Open the `Moduler & Package` folder in VS Code.
+1. Open the `Moduler & Package` folder in VS Code.
 
-2\. Open the terminal.
+2. Open the terminal.
 
-3\. Run:
+3. Run:
 
 ```bash
 
@@ -285,11 +296,11 @@ python main.py
 
 ```
 
-4\. The program will display the main menu.
+4. The program will display the main menu.
 
-5\. Select an option by entering the corresponding number.
+5. Select an option by entering the corresponding number.
 
-**## 🖥️ Sample Output**
+********## 🖥️ Sample Output******
 
 ```text
 
@@ -297,35 +308,35 @@ Welcome to Multi-Utility Toolkit
 
 Choose an option: 
 
-1\. Datetime and Time Operations 
+1. Datetime and Time Operations 
 
-2\. Mathematical Operations 
+2. Mathematical Operations 
 
-3\. Random Data Generation 
+3. Random Data Generation 
 
-4\. Generate Unique Identifiers (UID) 
+4. Generate Unique Identifiers (UID) 
 
-5\. File Operations (Custom Module) 
+5. File Operations (Custom Module) 
 
-6\. Explore Module Attributes (dir()) 
+6. Explore Module Attributes (dir()) 
 
-7\. Exit 
+7. Exit 
 
 Enter your choice: 1 
 
 Datetime and Time Operations: 
 
-1\. Display current date and time 
+1. Display current date and time 
 
-2\. Calculate difference between two dates/times 
+2. Calculate difference between two dates/times 
 
-3\. Format date into custom format 
+3. Format date into custom format 
 
-4\. Stopwatch 
+4. Stopwatch 
 
-5\. Countdown Timer 
+5. Countdown Timer 
 
-6\. Back to Main Menu 
+6. Back to Main Menu 
 
 Enter your choice: 1 
 
@@ -333,17 +344,17 @@ Current Date and Time: 2026-10-07 16:12:19
 
 Datetime and Time Operations: 
 
-1\. Display current date and time 
+1. Display current date and time 
 
-2\. Calculate difference between two dates/times 
+2. Calculate difference between two dates/times 
 
-3\. Format date into custom format 
+3. Format date into custom format 
 
-4\. Stopwatch 
+4. Stopwatch 
 
-5\. Countdown Timer 
+5. Countdown Timer 
 
-6\. Back to Main Menu 
+6. Back to Main Menu 
 
 Enter your choice: 2 
 
@@ -355,17 +366,17 @@ Difference: 117 days
 
 Datetime and Time Operations: 
 
-1\. Display current date and time 
+1. Display current date and time 
 
-2\. Calculate difference between two dates/times 
+2. Calculate difference between two dates/times 
 
-3\. Format date into custom format 
+3. Format date into custom format 
 
-4\. Stopwatch 
+4. Stopwatch 
 
-5\. Countdown Timer 
+5. Countdown Timer 
 
-6\. Back to Main Menu 
+6. Back to Main Menu 
 
 Enter your choice: 6 
 
@@ -373,33 +384,33 @@ Welcome to Multi-Utility Toolkit
 
 Choose an option: 
 
-1\. Datetime and Time Operations 
+1. Datetime and Time Operations 
 
-2\. Mathematical Operations 
+2. Mathematical Operations 
 
-3\. Random Data Generation 
+3. Random Data Generation 
 
-4\. Generate Unique Identifiers (UID) 
+4. Generate Unique Identifiers (UID) 
 
-5\. File Operations (Custom Module) 
+5. File Operations (Custom Module) 
 
-6\. Explore Module Attributes (dir()) 
+6. Explore Module Attributes (dir()) 
 
-7\. Exit 
+7. Exit 
 
 Enter your choice: 2 
 
 Mathematical Operations: 
 
-1\. Calculate Factorial 
+1. Calculate Factorial 
 
-2\. Solve Compound Interest 
+2. Solve Compound Interest 
 
-3\. Trigonometric Calculations 
+3. Trigonometric Calculations 
 
-4\. Area of Geometric Shapes 
+4. Area of Geometric Shapes 
 
-5\. Back to Main Menu 
+5. Back to Main Menu 
 
 Enter your choice: 1 
 
@@ -409,15 +420,15 @@ Factorial: 120
 
 Mathematical Operations: 
 
-1\. Calculate Factorial 
+1. Calculate Factorial 
 
-2\. Solve Compound Interest 
+2. Solve Compound Interest 
 
-3\. Trigonometric Calculations 
+3. Trigonometric Calculations 
 
-4\. Area of Geometric Shapes 
+4. Area of Geometric Shapes 
 
-5\. Back to Main Menu 
+5. Back to Main Menu 
 
 Enter your choice: 2 
 
@@ -431,15 +442,15 @@ Compound Interest: 1102.50
 
 Mathematical Operations: 
 
-1\. Calculate Factorial 
+1. Calculate Factorial 
 
-2\. Solve Compound Interest 
+2. Solve Compound Interest 
 
-3\. Trigonometric Calculations 
+3. Trigonometric Calculations 
 
-4\. Area of Geometric Shapes 
+4. Area of Geometric Shapes 
 
-5\. Back to Main Menu 
+5. Back to Main Menu 
 
 Enter your choice: 5 
 
@@ -447,33 +458,33 @@ Welcome to Multi-Utility Toolkit
 
 Choose an option: 
 
-1\. Datetime and Time Operations 
+1. Datetime and Time Operations 
 
-2\. Mathematical Operations 
+2. Mathematical Operations 
 
-3\. Random Data Generation 
+3. Random Data Generation 
 
-4\. Generate Unique Identifiers (UID) 
+4. Generate Unique Identifiers (UID) 
 
-5\. File Operations (Custom Module) 
+5. File Operations (Custom Module) 
 
-6\. Explore Module Attributes (dir()) 
+6. Explore Module Attributes (dir()) 
 
-7\. Exit 
+7. Exit 
 
 Enter your choice: 3 
 
 Random Data Generation: 
 
-1\. Generate Random Number 
+1. Generate Random Number 
 
-2\. Generate Random List 
+2. Generate Random List 
 
-3\. Create Random Password 
+3. Create Random Password 
 
-4\. Generate Random OTP 
+4. Generate Random OTP 
 
-5\. Back to Main Menu 
+5. Back to Main Menu 
 
 Enter your choice: 3 
 
@@ -483,15 +494,15 @@ Generated Password: 8DZLXAkW
 
 Random Data Generation: 
 
-1\. Generate Random Number 
+1. Generate Random Number 
 
-2\. Generate Random List 
+2. Generate Random List 
 
-3\. Create Random Password 
+3. Create Random Password 
 
-4\. Generate Random OTP 
+4. Generate Random OTP 
 
-5\. Back to Main Menu 
+5. Back to Main Menu 
 
 Enter your choice: 5 
 
@@ -499,19 +510,19 @@ Welcome to Multi-Utility Toolkit
 
 Choose an option: 
 
-1\. Datetime and Time Operations 
+1. Datetime and Time Operations 
 
-2\. Mathematical Operations 
+2. Mathematical Operations 
 
-3\. Random Data Generation 
+3. Random Data Generation 
 
-4\. Generate Unique Identifiers (UID) 
+4. Generate Unique Identifiers (UID) 
 
-5\. File Operations (Custom Module) 
+5. File Operations (Custom Module) 
 
-6\. Explore Module Attributes (dir()) 
+6. Explore Module Attributes (dir()) 
 
-7\. Exit 
+7. Exit 
 
 Enter your choice: 4 
 
@@ -523,33 +534,33 @@ Welcome to Multi-Utility Toolkit
 
 Choose an option: 
 
-1\. Datetime and Time Operations 
+1. Datetime and Time Operations 
 
-2\. Mathematical Operations 
+2. Mathematical Operations 
 
-3\. Random Data Generation 
+3. Random Data Generation 
 
-4\. Generate Unique Identifiers (UID) 
+4. Generate Unique Identifiers (UID) 
 
-5\. File Operations (Custom Module) 
+5. File Operations (Custom Module) 
 
-6\. Explore Module Attributes (dir()) 
+6. Explore Module Attributes (dir()) 
 
-7\. Exit 
+7. Exit 
 
 Enter your choice: 5 
 
 File Operations: 
 
-1\. Create a new file 
+1. Create a new file 
 
-2\. Write to a file 
+2. Write to a file 
 
-3\. Read from a file 
+3. Read from a file 
 
-4\. Append to a file 
+4. Append to a file 
 
-5\. Back to Main Menu 
+5. Back to Main Menu 
 
 Enter your choice: 1 
 
@@ -559,15 +570,15 @@ File created successfully!
 
 File Operations: 
 
-1\. Create a new file 
+1. Create a new file 
 
-2\. Write to a file 
+2. Write to a file 
 
-3\. Read from a file 
+3. Read from a file 
 
-4\. Append to a file 
+4. Append to a file 
 
-5\. Back to Main Menu 
+5. Back to Main Menu 
 
 Enter your choice: 2 
 
@@ -579,15 +590,15 @@ Data written successfully!
 
 File Operations: 
 
-1\. Create a new file 
+1. Create a new file 
 
-2\. Write to a file 
+2. Write to a file 
 
-3\. Read from a file 
+3. Read from a file 
 
-4\. Append to a file 
+4. Append to a file 
 
-5\. Back to Main Menu 
+5. Back to Main Menu 
 
 Enter your choice: 3 
 
@@ -599,15 +610,15 @@ This is a sample file.
 
 File Operations: 
 
-1\. Create a new file 
+1. Create a new file 
 
-2\. Write to a file 
+2. Write to a file 
 
-3\. Read from a file 
+3. Read from a file 
 
-4\. Append to a file 
+4. Append to a file 
 
-5\. Back to Main Menu 
+5. Back to Main Menu 
 
 Enter your choice: 5 
 
@@ -615,19 +626,19 @@ Welcome to Multi-Utility Toolkit
 
 Choose an option: 
 
-1\. Datetime and Time Operations 
+1. Datetime and Time Operations 
 
-2\. Mathematical Operations 
+2. Mathematical Operations 
 
-3\. Random Data Generation 
+3. Random Data Generation 
 
-4\. Generate Unique Identifiers (UID) 
+4. Generate Unique Identifiers (UID) 
 
-5\. File Operations (Custom Module) 
+5. File Operations (Custom Module) 
 
-6\. Explore Module Attributes (dir()) 
+6. Explore Module Attributes (dir()) 
 
-7\. Exit 
+7. Exit 
 
 Enter your choice: 6 
 
@@ -637,25 +648,25 @@ Enter module name to explore: math
 
 Available Attributes in math module: 
 
-['__doc__', '__loader__', '__name__', '__package__', '__spec__', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'cbrt', 'ceil', 'comb', 'copysign', 'cos', 'cosh', 'degrees', 'dist', 'e', 'erf', 'erfc', 'exp', 'exp2', 'expm1', 'fabs', 'factorial', 'floor', 'fma', 'fmod', 'frexp', 'fsum', 'gamma', 'gcd', 'hypot', 'inf', 'isclose', 'isfinite', 'isinf', 'isnan', 'isqrt', 'lcm', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'log2', 'modf', 'nan', 'nextafter', 'perm', 'pi', 'pow', 'prod', 'radians', 'remainder', 'sin', 'sinh', 'sqrt', 'sumprod', 'tan', 'tanh', 'tau', 'trunc', 'ulp'] 
+['\\\_\\\_doc\\\_\\\_', '\\\_\\\_loader\\\_\\\_', '\\\_\\\_name\\\_\\\_', '\\\_\\\_package\\\_\\\_', '\\\_\\\_spec\\\_\\\_', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'cbrt', 'ceil', 'comb', 'copysign', 'cos', 'cosh', 'degrees', 'dist', 'e', 'erf', 'erfc', 'exp', 'exp2', 'expm1', 'fabs', 'factorial', 'floor', 'fma', 'fmod', 'frexp', 'fsum', 'gamma', 'gcd', 'hypot', 'inf', 'isclose', 'isfinite', 'isinf', 'isnan', 'isqrt', 'lcm', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'log2', 'modf', 'nan', 'nextafter', 'perm', 'pi', 'pow', 'prod', 'radians', 'remainder', 'sin', 'sinh', 'sqrt', 'sumprod', 'tan', 'tanh', 'tau', 'trunc', 'ulp'] 
 
 Welcome to Multi-Utility Toolkit 
 
 Choose an option: 
 
-1\. Datetime and Time Operations 
+1. Datetime and Time Operations 
 
-2\. Mathematical Operations 
+2. Mathematical Operations 
 
-3\. Random Data Generation 
+3. Random Data Generation 
 
-4\. Generate Unique Identifiers (UID) 
+4. Generate Unique Identifiers (UID) 
 
-5\. File Operations (Custom Module) 
+5. File Operations (Custom Module) 
 
-6\. Explore Module Attributes (dir()) 
+6. Explore Module Attributes (dir()) 
 
-7\. Exit 
+7. Exit 
 
 Enter your choice: 7 
 
