@@ -4,34 +4,33 @@
 
 ## 📌 Project Overview
 
-Moduler & Package is a Python-based **Multi-Utility Toolkit** that provides different useful operations through a menu-driven program.
+**Moduler & Package – Multi-Utility Toolkit** is a menu-driven Python project that brings several useful utilities together in one program. The user selects an option from the main menu, and the program calls the relevant function from a custom module.
 
-The project is organized using a custom Python package named `modules`. Different operations are separated into individual Python files to make the project structured, reusable, and easy to understand.
+The project is organized as a Python package named `modules`. The main menu is in `main.py`, general utility operations are in `modules/operations.py`, and file-handling functions are in `modules/file_operations.py`.
 
 ## 🛠️ Technology Used
 
 - Python 3.14.6
-- VS Code
+- Visual Studio Code (VS Code)
+- Git
+- GitHub
 
 ## 🎯 Objective
 
-The main objective of this project is to implement and demonstrate:
+The objective of this project is to practise Python modules and packages by building a reusable, menu-driven toolkit. It demonstrates the following concepts that are present in the program:
 
-- Python Modules and Packages
-- Importing Modules
-- Datetime and Time Operations
-- Mathematical Operations
-- Random Data Generation
-- Unique Identifier Generation
-- File Operations
-- Dynamic Module Exploration using `dir()`
-- Menu-driven programming
-- Functions
-- Variables
-- Input and Output
-- Conditional Statements
-- Loops
-- File Handling
+- Importing built-in and custom modules
+- Creating and calling user-defined functions
+- Variables, strings, lists, and a dictionary
+- Taking input and displaying output
+- Type conversion with `int()` and `float()`
+- Conditional statements and loops
+- Date and time operations
+- Mathematical calculations
+- Random data generation
+- UUID generation
+- File creation, writing, reading, and appending
+- Exploring module attributes with `dir()`
 
 ## 📂 Project Structure
 
@@ -41,449 +40,584 @@ Moduler & Package/
 ├── main.py
 ├── README.md
 ├── output.png
+├── example.txt
 │
 └── modules/
     ├── __init__.py
     ├── operations.py
-    └── file_operations.py
+    ├── file_operations.py
+    │
+    └── __pycache__/
+        ├── __init__.cpython-314.pyc
+        ├── operations.cpython-314.pyc
+        └── file_operations.cpython-314.pyc
 ```
+
+**Note:** `example.txt` is created when the File Operations menu is used. It is a runtime-created example file; it does not need to exist before the program is run. `output.png` contains screenshots of the program output.
 
 ## 📄 File Description
 
 ### `main.py`
 
-Contains the main menu and connects all operations from the custom modules.
+- Displays the main menu.
+- Gets the user's menu choice with `input()`.
+- Uses `if`, `elif`, and `else` to decide which operation to run.
+- Calls functions imported from the custom modules.
+- Uses a `while` loop to keep showing the menu until the user selects Exit.
 
 ### `modules/__init__.py`
 
-Used to initialize the custom `modules` package.
+Contains a short comment describing the custom package. It is included in the `modules` package folder.
 
 ### `modules/operations.py`
 
-Contains datetime/time, mathematical, random data, UUID, and module attribute operations.
+Contains functions for:
+- Date and time operations
+- Mathematical calculations
+- Random data generation
+- UUID generation
+- Exploring attributes of supported modules
+
+It imports the built-in modules `datetime`, `time`, `math`, `random`, and `uuid`.
 
 ### `modules/file_operations.py`
 
-Contains file creation, writing, reading, and appending operations.
+Contains the file operations menu and functions to create a file, write data, read data, and append data. It uses `open()`, `write()`, `read()`, and `close()`.
 
-### `README.md`
+### `example.txt`
 
-Contains the complete project documentation.
+A sample text file that can be created by choosing **File Operations → Create a new file**. The user can then write, read, or append text to it using the program.
 
 ### `output.png`
 
-Contains the screenshot/image of the project output.
+Contains the combined screenshot output for the project.
+
+### `README.md`
+
+Documents the project overview, features, structure, concepts used, instructions to run the program, and sample output.
 
 ## ✨ Features
 
 ### 1. Datetime and Time Operations
 
-- Display current date and time
-- Calculate difference between two dates/times
-- Format date into custom format
-- Stopwatch
-- Countdown Timer
+The Datetime and Time menu provides these options:
 
-Uses Python's `datetime` and `time` modules.
+- Display the current date and time using `datetime.datetime.now()`
+- Calculate the number of days between two dates
+- Format a date from `YYYY-MM-DD` to `DD-MM-YYYY`
+- Measure elapsed time with a stopwatch
+- Run a countdown timer
+
+The code uses `strftime()` to format a date, `strptime()` to parse a date entered by the user, `time.time()` to measure elapsed time, and `time.sleep(1)` to pause the countdown for one second. The date difference uses `.days` and `abs()`.
 
 ### 2. Mathematical Operations
 
-- Factorial calculation
-- Compound interest calculation
-- Trigonometric calculations
-- Area of geometric shapes
+The Mathematical Operations menu includes:
 
-Shapes include Circle, Rectangle, and Triangle.
+- Calculate a number's factorial with `math.factorial()`
+- Calculate the compound amount from a principal, rate, and time
+- Calculate sine, cosine, and tangent for an angle entered in degrees
+- Calculate the area of a circle, rectangle, or triangle
 
-Uses Python's `math` module.
+The code uses `math.radians()` to convert degrees to radians, `math.sin()`, `math.cos()`, and `math.tan()` for trigonometry, and `math.pi` for the circle area. It uses `round()` to display rounded results and `format(amount, ".2f")` to show the amount with two decimal places.
 
 ### 3. Random Data Generation
 
-- Random number
-- Random list
-- Random password
-- Random OTP
+The Random Data Generation menu can:
 
-Uses Python's `random` module.
+- Generate a random integer from 1 to 100
+- Create a list containing random integers
+- Generate a password from letters, digits, and selected symbols
+- Generate a six-digit random OTP-style number
+
+The code uses `random.randint()` to generate random integers and `random.choice()` to choose a character for the password. A `for` loop builds the random list and password.
 
 ### 4. Unique Identifier Generation
 
-Generates a unique identifier using Python's `uuid` module.
+The UID option uses `uuid.uuid4()` to generate and display a UUID. The generated value is an identifier string in a UUID format.
 
 ### 5. File Operations
 
-- Create a new file
-- Write data to a file
-- Read file contents
-- Append data to a file
+The File Operations menu provides four actions:
 
-File modes used:
+- **Create a new file:** Opens the entered file name in append mode (`"a"`), which creates the file if it does not already exist.
+- **Write to a file:** Opens the file in write mode (`"w"`) and writes the entered text. Write mode replaces existing content.
+- **Read from a file:** Opens the file in read mode (`"r"`) and displays its contents.
+- **Append to a file:** Opens the file in append mode (`"a"`) and writes additional text at the end.
 
-- `r` – Read
-- `w` – Write
-- `a` – Append
+The code explicitly closes each file with `close()`. For example, the user can create `example.txt`, write `This is a sample file.`, and read that text back from the file.
 
 ### 6. Explore Module Attributes
 
-Uses Python's built-in `dir()` function to display available attributes of supported modules:
-
-- `datetime`
-- `time`
-- `math`
-- `random`
-- `uuid`
+The module exploration option accepts a module name from this set: `datetime`, `time`, `math`, `random`, and `uuid`. A dictionary maps each supported name to its imported module object. The program checks whether the entered name exists in the dictionary and, if it does, uses `dir()` to display the module's available names.
 
 ## 📚 Concepts Used
 
+The following concepts are used in the supplied code.
+
 ### Python Basics
 
-- Variables
-- Data Types
-- Input
-- Output
-- Type Conversion
-- Strings
-- Lists
-- Dictionary
+- Variables for storing choices, dates, numbers, text, and calculation results
+- Strings for menu choices, prompts, dates, file names, and messages
+- Lists for storing generated random numbers
+- Dictionary for mapping supported module names to module objects
+- `input()` for user input
+- `print()` for output
+- `int()` and `float()` for converting input values
+- String concatenation with `+`
+- `round()`, `abs()`, and `format()`
 
 ### Conditional Statements
 
 - `if`
 - `elif`
 - `else`
+- Membership checking with `in`
 
-### Loops
+### Loops and Flow Control
 
-- `while`
-- `for`
-- `break`
+- `while True` for repeating menus
+- `while seconds > 0` for the countdown
+- `for` loops for building lists and passwords
+- `break` to leave a menu loop
 
 ### Functions
 
-- User-defined functions
-- Function calling
+- Defining functions with `def`
+- Calling functions from the main program
+- Separating each feature into its own function
 
 ### Modules and Packages
 
 - `import`
-- Built-in modules
-- Custom modules
-- Custom package using `modules/`
+- Importing selected functions with `from ... import`
+- Built-in modules: `datetime`, `time`, `math`, `random`, `uuid`
+- Custom modules: `operations.py` and `file_operations.py`
+- Package folder: `modules/`
 - `__init__.py`
 
-### File Handling
+### Date and Time Functions
 
-- `open()`
-- `read()`
-- `write()`
-- `close()`
-- File modes `r`, `w`, `a`
-
-### Other Python Concepts
-
-- `datetime.now()`
+- `datetime.datetime.now()`
 - `strftime()`
 - `strptime()`
 - `time.time()`
 - `time.sleep()`
+- Date subtraction and `.days`
+
+### Mathematical Functions
+
 - `math.factorial()`
+- `math.radians()`
 - `math.sin()`
 - `math.cos()`
 - `math.tan()`
 - `math.pi`
+
+### Random and UUID Functions
+
 - `random.randint()`
 - `random.choice()`
 - `uuid.uuid4()`
-- `dir()`
-- String operations
-- Type conversion
+
+### File Handling
+
+- `open()`
+- `write()`
+- `read()`
+- `close()`
+- File modes: `"a"`, `"w"`, and `"r"`
+
+### Module Exploration
+
+- Dictionary lookup
+- Membership checking with `in`
+- `dir()` to list module attributes
 
 ## ▶️ How to Run
 
 1. Open the `Moduler & Package` folder in VS Code.
-2. Open the terminal.
-3. Run:
+2. Open the terminal in that folder.
+3. Run this command:
 
 ```bash
 python main.py
 ```
 
-4. The program will display the main menu.
-5. Select an option by entering the corresponding number.
+4. Choose an option by entering its number.
+5. Follow the prompts shown in the terminal.
+6. Choose **Exit** from the main menu to close the program.
 
 ## 🖥️ Sample Output
 
 ```text
-Welcome to Multi-Utility Toolkit
 
-Choose an option:
+Welcome to Multi-Utility Toolkit 
 
-1. Datetime and Time Operations
-2. Mathematical Operations
-3. Random Data Generation
-4. Generate Unique Identifiers (UID)
-5. File Operations (Custom Module)
-6. Explore Module Attributes (dir())
-7. Exit
+Choose an option: 
 
-Enter your choice: 1
+1. Datetime and Time Operations 
 
-Datetime and Time Operations:
+2. Mathematical Operations 
 
-1. Display current date and time
-2. Calculate difference between two dates/times
-3. Format date into custom format
-4. Stopwatch
-5. Countdown Timer
-6. Back to Main Menu
+3. Random Data Generation 
 
-Enter your choice: 1
+4. Generate Unique Identifiers (UID) 
 
-Current Date and Time: 2026-10-07 16:12:19
+5. File Operations (Custom Module) 
 
-Datetime and Time Operations:
+6. Explore Module Attributes (dir()) 
 
-1. Display current date and time
-2. Calculate difference between two dates/times
-3. Format date into custom format
-4. Stopwatch
-5. Countdown Timer
-6. Back to Main Menu
+7. Exit 
 
-Enter your choice: 2
+Enter your choice: 1 
 
-Enter the first date (YYYY-MM-DD): 2007-04-15
-Enter the second date (YYYY-MM-DD): 2006-12-19
-Difference: 117 days
+Datetime and Time Operations: 
 
-Datetime and Time Operations:
+1. Display current date and time 
 
-1. Display current date and time
-2. Calculate difference between two dates/times
-3. Format date into custom format
-4. Stopwatch
-5. Countdown Timer
-6. Back to Main Menu
+2. Calculate difference between two dates/times 
 
-Enter your choice: 6
+3. Format date into custom format 
 
-Welcome to Multi-Utility Toolkit
+4. Stopwatch 
 
-Choose an option:
+5. Countdown Timer 
 
-1. Datetime and Time Operations
-2. Mathematical Operations
-3. Random Data Generation
-4. Generate Unique Identifiers (UID)
-5. File Operations (Custom Module)
-6. Explore Module Attributes (dir())
-7. Exit
+6. Back to Main Menu 
 
-Enter your choice: 2
+Enter your choice: 1 
 
-Mathematical Operations:
+Current Date and Time: 2026-10-07 16:12:19 
 
-1. Calculate Factorial
-2. Solve Compound Interest
-3. Trigonometric Calculations
-4. Area of Geometric Shapes
-5. Back to Main Menu
+Datetime and Time Operations: 
 
-Enter your choice: 1
+1. Display current date and time 
 
-Enter a number: 5
-Factorial: 120
+2. Calculate difference between two dates/times 
 
-Mathematical Operations:
+3. Format date into custom format 
 
-1. Calculate Factorial
-2. Solve Compound Interest
-3. Trigonometric Calculations
-4. Area of Geometric Shapes
-5. Back to Main Menu
+4. Stopwatch 
 
-Enter your choice: 2
+5. Countdown Timer 
 
-Enter principal amount: 1000
-Enter rate of interest (in %): 5
-Enter time (in years): 2
-Compound Interest: 1102.50
+6. Back to Main Menu 
 
-Mathematical Operations:
+Enter your choice: 2 
 
-1. Calculate Factorial
-2. Solve Compound Interest
-3. Trigonometric Calculations
-4. Area of Geometric Shapes
-5. Back to Main Menu
+Enter the first date (YYYY-MM-DD): 2007-04-15 
 
-Enter your choice: 5
+Enter the second date (YYYY-MM-DD): 2006-12-19 
 
-Welcome to Multi-Utility Toolkit
+Difference: 117 days 
 
-Choose an option:
+Datetime and Time Operations: 
 
-1. Datetime and Time Operations
-2. Mathematical Operations
-3. Random Data Generation
-4. Generate Unique Identifiers (UID)
-5. File Operations (Custom Module)
-6. Explore Module Attributes (dir())
-7. Exit
+1. Display current date and time 
 
-Enter your choice: 3
+2. Calculate difference between two dates/times 
 
-Random Data Generation:
+3. Format date into custom format 
 
-1. Generate Random Number
-2. Generate Random List
-3. Create Random Password
-4. Generate Random OTP
-5. Back to Main Menu
+4. Stopwatch 
 
-Enter your choice: 3
+5. Countdown Timer 
 
-Enter password length: 8
-Generated Password: 8DZLXAkW
+6. Back to Main Menu 
 
-Random Data Generation:
+Enter your choice: 6 
 
-1. Generate Random Number
-2. Generate Random List
-3. Create Random Password
-4. Generate Random OTP
-5. Back to Main Menu
+Welcome to Multi-Utility Toolkit 
 
-Enter your choice: 5
+Choose an option: 
 
-Welcome to Multi-Utility Toolkit
+1. Datetime and Time Operations 
 
-Choose an option:
+2. Mathematical Operations 
 
-1. Datetime and Time Operations
-2. Mathematical Operations
-3. Random Data Generation
-4. Generate Unique Identifiers (UID)
-5. File Operations (Custom Module)
-6. Explore Module Attributes (dir())
-7. Exit
+3. Random Data Generation 
 
-Enter your choice: 4
+4. Generate Unique Identifiers (UID) 
 
-Generate Unique Identifiers (UID):
+5. File Operations (Custom Module) 
 
-Generated UID: b5b4fe26-6d50-435c-8978-a44e8f10ec66
+6. Explore Module Attributes (dir()) 
 
-Welcome to Multi-Utility Toolkit
+7. Exit 
 
-Choose an option:
+Enter your choice: 2 
 
-1. Datetime and Time Operations
-2. Mathematical Operations
-3. Random Data Generation
-4. Generate Unique Identifiers (UID)
-5. File Operations (Custom Module)
-6. Explore Module Attributes (dir())
-7. Exit
+Mathematical Operations: 
 
-Enter your choice: 5
+1. Calculate Factorial 
 
-File Operations:
+2. Solve Compound Interest 
 
-1. Create a new file
-2. Write to a file
-3. Read from a file
-4. Append to a file
-5. Back to Main Menu
+3. Trigonometric Calculations 
 
-Enter your choice: 1
+4. Area of Geometric Shapes 
 
-Enter file name: example.txt
-File created successfully!
+5. Back to Main Menu 
 
-File Operations:
+Enter your choice: 1 
 
-1. Create a new file
-2. Write to a file
-3. Read from a file
-4. Append to a file
-5. Back to Main Menu
+Enter a number: 5 
 
-Enter your choice: 2
+Factorial: 120 
 
-Enter file name: example.txt
-Enter data to write: This is a sample file.
-Data written successfully!
+Mathematical Operations: 
 
-File Operations:
+1. Calculate Factorial 
 
-1. Create a new file
-2. Write to a file
-3. Read from a file
-4. Append to a file
-5. Back to Main Menu
+2. Solve Compound Interest 
 
-Enter your choice: 3
+3. Trigonometric Calculations 
 
-Enter file name: example.txt
+4. Area of Geometric Shapes 
 
-File Content:
+5. Back to Main Menu 
 
-This is a sample file.
+Enter your choice: 2 
 
-File Operations:
+Enter principal amount: 1000 
 
-1. Create a new file
-2. Write to a file
-3. Read from a file
-4. Append to a file
-5. Back to Main Menu
+Enter rate of interest (in %): 5 
 
-Enter your choice: 5
+Enter time (in years): 2 
 
-Welcome to Multi-Utility Toolkit
+Compound Interest: 1102.50 
 
-Choose an option:
+Mathematical Operations: 
 
-1. Datetime and Time Operations
-2. Mathematical Operations
-3. Random Data Generation
-4. Generate Unique Identifiers (UID)
-5. File Operations (Custom Module)
-6. Explore Module Attributes (dir())
-7. Exit
+1. Calculate Factorial 
 
-Enter your choice: 6
+2. Solve Compound Interest 
 
-Explore Module Attributes:
+3. Trigonometric Calculations 
 
-Enter module name to explore: math
+4. Area of Geometric Shapes 
 
-Available Attributes in math module:
+5. Back to Main Menu 
 
-['__doc__', '__loader__', '__name__', '__package__', '__spec__',
-'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'cbrt',
-'ceil', 'comb', 'copysign', 'cos', 'cosh', 'degrees', 'dist', 'e',
-'erf', 'erfc', 'exp', 'exp2', 'expm1', 'fabs', 'factorial', 'floor',
-'fma', 'fmod', 'frexp', 'fsum', 'gamma', 'gcd', 'hypot', 'inf',
-'isclose', 'isfinite', 'isinf', 'isnan', 'isqrt', 'lcm', 'ldexp',
-'lgamma', 'log', 'log10', 'log1p', 'log2', 'modf', 'nan', 'nextafter',
-'perm', 'pi', 'pow', 'prod', 'radians', 'remainder', 'sin', 'sinh',
-'sqrt', 'sumprod', 'tan', 'tanh', 'tau', 'trunc', 'ulp']
+Enter your choice: 5 
 
-Welcome to Multi-Utility Toolkit
+Welcome to Multi-Utility Toolkit 
 
-Choose an option:
+Choose an option: 
 
-1. Datetime and Time Operations
-2. Mathematical Operations
-3. Random Data Generation
-4. Generate Unique Identifiers (UID)
-5. File Operations (Custom Module)
-6. Explore Module Attributes (dir())
-7. Exit
+1. Datetime and Time Operations 
 
-Enter your choice: 7
+2. Mathematical Operations 
+
+3. Random Data Generation 
+
+4. Generate Unique Identifiers (UID) 
+
+5. File Operations (Custom Module) 
+
+6. Explore Module Attributes (dir()) 
+
+7. Exit 
+
+Enter your choice: 3 
+
+Random Data Generation: 
+
+1. Generate Random Number 
+
+2. Generate Random List 
+
+3. Create Random Password 
+
+4. Generate Random OTP 
+
+5. Back to Main Menu 
+
+Enter your choice: 3 
+
+Enter password length: 8 
+
+Generated Password: 8DZLXAkW 
+
+Random Data Generation: 
+
+1. Generate Random Number 
+
+2. Generate Random List 
+
+3. Create Random Password 
+
+4. Generate Random OTP 
+
+5. Back to Main Menu 
+
+Enter your choice: 5 
+
+Welcome to Multi-Utility Toolkit 
+
+Choose an option: 
+
+1. Datetime and Time Operations 
+
+2. Mathematical Operations 
+
+3. Random Data Generation 
+
+4. Generate Unique Identifiers (UID) 
+
+5. File Operations (Custom Module) 
+
+6. Explore Module Attributes (dir()) 
+
+7. Exit 
+
+Enter your choice: 4 
+
+Generate Unique Identifiers (UID): 
+
+Generated UID: b5b4fe26-6d50-435c-8978-a44e8f10ec66 
+
+Welcome to Multi-Utility Toolkit 
+
+Choose an option: 
+
+1. Datetime and Time Operations 
+
+2. Mathematical Operations 
+
+3. Random Data Generation 
+
+4. Generate Unique Identifiers (UID) 
+
+5. File Operations (Custom Module) 
+
+6. Explore Module Attributes (dir()) 
+
+7. Exit 
+
+Enter your choice: 5 
+
+File Operations: 
+
+1. Create a new file 
+
+2. Write to a file 
+
+3. Read from a file 
+
+4. Append to a file 
+
+5. Back to Main Menu 
+
+Enter your choice: 1 
+
+Enter file name: example.txt 
+
+File created successfully! 
+
+File Operations: 
+
+1. Create a new file 
+
+2. Write to a file 
+
+3. Read from a file 
+
+4. Append to a file 
+
+5. Back to Main Menu 
+
+Enter your choice: 2 
+
+Enter file name: example.txt 
+
+Enter data to write: This is a sample file. 
+
+Data written successfully! 
+
+File Operations: 
+
+1. Create a new file 
+
+2. Write to a file 
+
+3. Read from a file 
+
+4. Append to a file 
+
+5. Back to Main Menu 
+
+Enter your choice: 3 
+
+Enter file name: example.txt 
+
+File Content: 
+
+This is a sample file. 
+
+File Operations: 
+
+1. Create a new file 
+
+2. Write to a file 
+
+3. Read from a file 
+
+4. Append to a file 
+
+5. Back to Main Menu 
+
+Enter your choice: 5 
+
+Welcome to Multi-Utility Toolkit 
+
+Choose an option: 
+
+1. Datetime and Time Operations 
+
+2. Mathematical Operations 
+
+3. Random Data Generation 
+
+4. Generate Unique Identifiers (UID) 
+
+5. File Operations (Custom Module) 
+
+6. Explore Module Attributes (dir()) 
+
+7. Exit 
+
+Enter your choice: 6 
+
+Explore Module Attributes: 
+
+Enter module name to explore: math 
+
+Available Attributes in math module: 
+
+['__doc__', '__loader__', '__name__', '__package__', '__spec__', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'cbrt', 'ceil', 'comb', 'copysign', 'cos', 'cosh', 'degrees', 'dist', 'e', 'erf', 'erfc', 'exp', 'exp2', 'expm1', 'fabs', 'factorial', 'floor', 'fma', 'fmod', 'frexp', 'fsum', 'gamma', 'gcd', 'hypot', 'inf', 'isclose', 'isfinite', 'isinf', 'isnan', 'isqrt', 'lcm', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'log2', 'modf', 'nan', 'nextafter', 'perm', 'pi', 'pow', 'prod', 'radians', 'remainder', 'sin', 'sinh', 'sqrt', 'sumprod', 'tan', 'tanh', 'tau', 'trunc', 'ulp'] 
+
+Welcome to Multi-Utility Toolkit 
+
+Choose an option: 
+
+1. Datetime and Time Operations 
+
+2. Mathematical Operations 
+
+3. Random Data Generation 
+
+4. Generate Unique Identifiers (UID) 
+
+5. File Operations (Custom Module) 
+
+6. Explore Module Attributes (dir()) 
+
+7. Exit 
+
+Enter your choice: 7 
 
 Thank you for using Multi-Utility Toolkit!
+
 ```
